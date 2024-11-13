@@ -1,12 +1,13 @@
 
 import './App.css'
 import Sidebar from './vcomponents/Sidebar'
-
+import WhiteSpace from "./vcomponents/WhiteSpace"
 function App() {
 
   return (
-    <div>
+    <div className='mainEditer'>
       <Sidebar />
+      <WhiteSpace />
     </div>
   )
 }
