@@ -1,0 +1,225 @@
+
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  body {
+    margin-top: 60px; /* Adjust based on navbar height */
+  }
+  
+  .hero-section {
+    padding: 60px 20px;
+  }
+  
+  .hero-section h1 {
+    font-weight: 700;
+  }
+  
+  .hero-buttons .btn {
+    padding: 10px 20px;
+  }
+  /* In HomePage.css */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border-radius: 8px;
+  }
+  
+  .btn-outline-primary {
+    border-radius: 20px;
+  }
+  /* In HomePage.css */
+  footer h6 {
+    font-weight: bold;
+    color: #aaa;
+  }
+  
+  footer p, footer li {
+    color: #ccc;
+  }
+  
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer li {
+    margin-bottom: 8px;
+  }
+  .small-preview-image {
+    width: 70%; /* Adjust the percentage to make it smaller or larger */
+    max-width: 600px; /* Set a max width for larger screens */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto; /* Centers the image */
+  } 
+    /*login page  */
+    /* Style for the login page background */
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Container for the login form */
+  .login-form-container {
+    background: rgba(0, 0, 0, 0.5);  /* Overlay for dark background */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Style for the form */
+  .login-form {
+    text-align: center;
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0c0c0c;
+  }
+  
+  /* Style for the input fields */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 8px;
+    background-color: #fff;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Style for the login button */
+  .login-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #ff3f2f;
+  }
+  
+  /* Style for the sign-up link */
+  .signup-link {
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  /* Style for the signup page background */
+  .signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    /* background-image: url('https://colorlib.com/wp/wp-content/uploads/sites/2/free-html5-and-css3-login-forms.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Form container styles */
+  .signup-container form {
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 8px;
+    background-color: #fff;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ff3f2f;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Login link */
+  .signup-container p {
+    margin-top: 20px;
+  }
+  
+  .signup-container a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  
+  .signup-container a:hover {
+    text-decoration: underline;
+  }
+  .loved-by-developers {
+      margin-top: 50px; /* Ensure there's enough space */
+      font-size: 2.5rem; /* Increase font size */
+    }
+    
+  

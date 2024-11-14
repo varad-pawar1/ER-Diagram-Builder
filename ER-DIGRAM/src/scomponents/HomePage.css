@@ -1,0 +1,47 @@
+.hero-section {
+    padding: 60px 20px;
+  }
+  
+  .hero-section h1 {
+    font-weight: 700;
+  }
+  
+  .hero-buttons .btn {
+    padding: 10px 20px;
+  }
+/* In HomePage.css */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border-radius: 8px;
+  }
+  
+  .btn-outline-primary {
+    border-radius: 20px;
+  }
+/* In HomePage.css */
+footer h6 {
+    font-weight: bold;
+    color: #aaa;
+  }
+  
+  footer p, footer li {
+    color: #ccc;
+  }
+  
+  footer ul {
+    padding-left: 0;
+  }
+  
+  footer li {
+    margin-bottom: 8px;
+  }
+  .small-preview-image {
+    width: 70%; /* Adjust the percentage to make it smaller or larger */
+    max-width: 600px; /* Set a max width for larger screens */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto; /* Centers the image */
+  }  
