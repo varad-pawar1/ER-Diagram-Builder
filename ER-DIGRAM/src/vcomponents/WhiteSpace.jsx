@@ -4,47 +4,79 @@ import {
   Controls,
   MiniMap,
   Background,
+  addEdge,
+  Handle,
+  EdgeText,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-import { Box } from "@chakra-ui/react";
+import { Box, Select } from "@chakra-ui/react";
 import ColorModeFlow from "./ColorMode/ColorModeFlow";
 import { ExportButton } from "./ExportButton/ExportButton";
 
 const WhiteSpace = ({ tables }) => {
   const [colorMode, setColorMode] = useState("dark");
-
-  // State for ReactFlow nodes and edges
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
+  const [relationshipType, setRelationshipType] = useState("One-to-One");
 
-  // Update nodes and edges whenever `tables` prop changes
   useEffect(() => {
-    const newNodes = tables.map((table, index) => ({
-      id: table.name,
-      data: {
-        label: (
-          <TableNode
-            label={table.name}
-            columns={table.columns.map((col) => col.name)}
-          />
-        ),
-      },
-      position: { x: 100 + index * 200, y: 100 }, // Adjust position dynamically
-      style: { padding: "10px", border: "1px solid gray" },
-    }));
+    const newNodes = [];
 
-    const newEdges = tables.flatMap((table, index) =>
-      table.columns.map((col) => ({
-        id: `${table.name}-${col.name}`,
-        source: table.name,
-        target: `${table.name}-${col.name}`,
-        animated: true,
-      }))
-    );
+    tables.forEach((table, tableIndex) => {
+      const tableNode = {
+        id: table.name,
+        data: { label: <TableNode label={table.name} /> },
+        position: { x: 100 + tableIndex * 300, y: 100 },
+        style: {
+          padding: "0px",
+          borderRadius: "8px",
+          background: "#21F3",
+          color: "#fff",
+        },
+        draggable: true,
+      };
+      newNodes.push(tableNode);
+
+      table.columns.forEach((col, colIndex) => {
+        const columnNodeId = `${table.name}-${col.name}`;
+        newNodes.push({
+          id: columnNodeId,
+          data: { label: <ColumnNode label={col.name} /> },
+          position: { x: 100 + tableIndex * 300, y: 140 + colIndex * 50 },
+          parentNode: table.name,
+          style: {
+            padding: "5px",
+            textAlign: "center",
+            borderRadius: "4px",
+            background: "red",
+            margin: "2px",
+          },
+          draggable: true,
+        });
+      });
+    });
 
     setNodes(newNodes);
-    setEdges(newEdges);
   }, [tables]);
+
+  const onConnect = (connection) => {
+    setEdges((eds) =>
+      addEdge(
+        {
+          ...connection,
+          label: relationshipType,
+          animated: true,
+          style: { stroke: "yellow", strokeDasharray: "5,5" },
+          labelStyle: { fontSize: 10, fill: "black" },
+        },
+        eds
+      )
+    );
+  };
+
+  const handleDeleteEdge = (edgeId) => {
+    setEdges((prevEdges) => prevEdges.filter((edge) => edge.id !== edgeId));
+  };
 
   return (
     <div className="White-space">
@@ -57,7 +89,24 @@ const WhiteSpace = ({ tables }) => {
           backgroundColor: colorMode === "dark" ? "#333" : "#fff",
         }}
       >
-        <ReactFlow nodes={nodes} edges={edges}>
+        <Select
+          placeholder="Select Relationship"
+          onChange={(e) => setRelationshipType(e.target.value)}
+          value={relationshipType}
+          style={{
+            position: "absolute",
+            top: 2,
+            left: 2,
+            zIndex: 2,
+            width: "200px",
+          }}
+        >
+          <option value="One-to-One">One-to-One</option>
+          <option value="One-to-Many">One-to-Many</option>
+          <option value="Many-to-Many">Many-to-Many</option>
+        </Select>
+
+        <ReactFlow nodes={nodes} edges={edges} onConnect={onConnect}>
           <ExportButton elementId="whiteBoard" />
           <Controls />
           <MiniMap
@@ -71,18 +120,67 @@ const WhiteSpace = ({ tables }) => {
   );
 };
 
-// Component to display table with columns
-const TableNode = ({ label, columns }) => (
-  <div style={{ textAlign: "center" }}>
-    <h3 style={{ margin: "5px 0", fontWeight: "bold" }}>{label}</h3>
-    <ul style={{ listStyle: "none", padding: 0 }}>
-      {columns.map((col, index) => (
-        <li key={index} style={{ fontSize: "12px" }}>
-          {col}
-        </li>
-      ))}
-    </ul>
+const TableNode = ({ label }) => (
+  <div
+    style={{
+      padding: "0px",
+      fontWeight: "bold",
+      textAlign: "center",
+      fontSize: "14px",
+      color: "#fff",
+    }}
+  >
+    <h3>{label}</h3>
   </div>
 );
+
+const ColumnNode = ({ label }) => (
+  <div
+    style={{
+      padding: "0px",
+      textAlign: "center",
+      borderRadius: "4px",
+      background: "#fff",
+      margin: "0",
+    }}
+  >
+    <p style={{ fontSize: "12px", margin: "0" }}>{label}</p>
+  </div>
+);
+
+// Custom edge component with delete button
+const CustomEdge = ({ id, source, target, label, animated, style, onDelete }) => {
+  const edgeStyle = { ...style, cursor: "pointer" };
+
+  return (
+    <div style={{ position: "relative" }}>
+      <div
+        style={{
+          ...edgeStyle,
+          width: "10px",
+          height: "10px",
+          position: "absolute",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 10,
+        }}
+      >
+        <button
+          onClick={() => onDelete(id)}
+          style={{
+            padding: "5px",
+            background: "red",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          X
+        </button>
+      </div>
+    </div>
+  );
+};
 
 export default WhiteSpace;
