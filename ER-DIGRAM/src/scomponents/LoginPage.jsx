@@ -36,7 +36,7 @@ const LoginPage = ({ onLogin }) => {
                 required
               />
             </div>
-            <button type="submit" className="login-btn">Login</button>
+            <button type="submit" className="login-btn button1">Login</button>
           </form>
           <div className="signup-link">
             <p>Don't have an account? <a href="/signup">Sign Up</a></p>

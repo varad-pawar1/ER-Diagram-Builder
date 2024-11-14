@@ -66,7 +66,7 @@ const SignupPage = ({ onSignup }) => {
           required
         />
         
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="button1">Sign Up</button>
         
         <p>
           Already have an account? <a href="/login">Login</a>

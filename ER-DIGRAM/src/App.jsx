@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import { Route, Navigate, Routes } from "react-router-dom"; // No need for BrowserRouter here
+import { Route, Navigate, Routes } from "react-router-dom";
 import Navbar from "./scomponents/Navbar";
 import HomePage from "./scomponents/HomePage";
 import LoginPage from "./scomponents/LoginPage";

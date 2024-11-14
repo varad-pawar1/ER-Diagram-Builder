@@ -181,7 +181,7 @@
     background-color: #fff;
   }
   
-  button {
+  .button1 {
     width: 100%;
     padding: 15px;
     font-size: 18px;
@@ -193,7 +193,7 @@
     margin-top: 10px;
   }
   
-  button:hover {
+  .button1:hover {
     background-color: #ff3f2f;
   }
   
