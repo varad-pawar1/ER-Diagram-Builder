@@ -1,0 +1,4 @@
+.mainEditer{
+    display: flex;
+    flex-direction: column;
+}

@@ -41,7 +41,6 @@
 
 // export default EditorNavCompo;
 
-
 import React, { useState } from 'react';
 import "./EditorNavCompo.css";
 
@@ -87,7 +86,7 @@ const EditorNavCompo = () => {
               style={{ cursor: "pointer" }}
               onClick={toggleDropdown}
             >
-              v
+              vh
             </p>
             {isDropdownVisible && (
               <div className="dropdown-menu">
@@ -103,5 +102,3 @@ const EditorNavCompo = () => {
 };
 
 export default EditorNavCompo;
-
-

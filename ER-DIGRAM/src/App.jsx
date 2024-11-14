@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <div className='mainEditer'>
-      {/* <EditorCompo/> */}
+      <EditorCompo/>
       <Sidebar />
       <WhiteSpace />
     </div>
