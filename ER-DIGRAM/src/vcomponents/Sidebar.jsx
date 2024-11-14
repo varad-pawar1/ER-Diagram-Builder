@@ -1,73 +1,27 @@
-import React, { useState } from 'react';
+// Sidebar.js
+import React from 'react';
 import './CSS/Sidebar.css';
 
-function Sidebar() {
-  const [tables, setTables] = useState([]);
-  const [tableCounter, setTableCounter] = useState(1);
-  const [editingTable, setEditingTable] = useState(null);
-  const [showActions, setShowActions] = useState(null);
-  const [expandedTable, setExpandedTable] = useState(null); // State to track the expanded table
-
-  const addTable = () => {
-    const newTable = {
-      name: `table_${tableCounter}`,
-      columns: [
-        { name: 'id', type: 'bigint' },
-      ],
-      comments: [],
-    };
-    setTables([...tables, newTable]);
-    setTableCounter(tableCounter + 1);
-  };
-
-  const handleRename = (index, newName) => {
-    const updatedTables = [...tables];
-    updatedTables[index].name = newName;
-    setTables(updatedTables);
-    setEditingTable(null);
-  };
-
-  const addColumn = (index) => {
-    const updatedTables = [...tables];
-    updatedTables[index].columns.push({ name: `column_${updatedTables[index].columns.length + 1}`, type: 'bigint' });
-    setTables(updatedTables);
-  };
-
-  const updateColumn = (tableIndex, colIndex, field, value) => {
-    const updatedTables = [...tables];
-    updatedTables[tableIndex].columns[colIndex][field] = value;
-    setTables(updatedTables);
-  };
-
-  const deleteColumn = (tableIndex, colIndex) => {
-    const updatedTables = [...tables];
-    updatedTables[tableIndex].columns.splice(colIndex, 1);
-    setTables(updatedTables);
-  };
-
-  const duplicateTable = (index) => {
-    const tableToDuplicate = tables[index];
-    const newTable = {
-      ...tableToDuplicate,
-      name: `${tableToDuplicate.name}_duplicate_${tableCounter}`,
-      columns: tableToDuplicate.columns.map(column => ({ ...column })),
-    };
-    setTables([...tables, newTable]);
-    setTableCounter(tableCounter + 1);
-  };
-
-  const toggleExpand = (index) => {
-    // Toggle the expanded state of the table
-    setExpandedTable(expandedTable === index ? null : index);
-  };
-  const addComment = (index) => {
-    const comment = prompt("Enter your comment:"); // Prompt the user to enter a comment
-    if (comment) {
-      const updatedTables = [...tables];
-      updatedTables[index].comments = [comment]; // Only keep the most recent comment
-      setTables(updatedTables);
-    }
-  };
+function Sidebar({
+  tables,
+  setTables,
+  tableCounter,
+  setTableCounter,
+  editingTable,
+  setEditingTable,
+  showActions,
+  setShowActions,
+  expandedTable,
+  setExpandedTable,
+  addTable,
+  handleRename,
+  addColumn,
+  updateColumn,
+  deleteColumn,
+  duplicateTable,
+  toggleExpand,
+  addComment,
+}) {
   return (
     <div className="sidebar">
       <h2>Tables</h2>
@@ -159,12 +113,12 @@ function Sidebar() {
                 </div>
 
                 <div className="table-comments">
-              {table.comments.map((comment, idx) => (
-                <div key={idx} className="table-comment">
-                  <i className="fa-solid fa-comment"></i> {comment}
+                  {table.comments.map((comment, idx) => (
+                    <div key={idx} className="table-comment">
+                      <i className="fa-solid fa-comment"></i> {comment}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
               </>
             )}
           </div>
