@@ -6,7 +6,7 @@ import "./CSS/style.css"
 const Navbar = ({ isLoggedIn, handleLogout }) => (
   <div className="navbar-container">
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">DrawER</a>
+      <a className="navbar-brand" href="/">ER SQL</a>
       <div className="collapse navbar-collapse justify-content-between">
         <ul className="navbar-nav mx-auto">
           <li className="nav-item">

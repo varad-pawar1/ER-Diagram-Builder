@@ -26,9 +26,9 @@ const HomePage = () => {
         </Link>
         </div>
         <div className="my-5 d-flex justify-content-center">
-          <div className="col-12 col-md-8 col-lg-6">
+          <div className="col-12 col-md-8 col-lg-10">
             <img
-              src="https://www.holistics.io/blog/content/images/2022/06/drawsql.png"
+              src="/src/assets/IMG/W1hatsApp.jpg"
               alt="Database Diagram Preview"
               className="img-fluid shadow rounded"
             />
@@ -197,7 +197,9 @@ const HomePage = () => {
           </span>{" "}
           diagram for your app database in less than 15 minutes.
         </p>
+        <Link to="/editercomp">
         <button className="btn btn-primary" style={{ width: "300px" }}>Start diagramming</button>
+        </Link>
       </div>
 
  {/* Footer Section */}
@@ -205,7 +207,7 @@ const HomePage = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-3 mb-4">
-              <h5>drawSQL</h5>
+              <h5>ER SQL</h5>
               <p>
                 Work together to design, model, and document the database schema
                 of your app.
