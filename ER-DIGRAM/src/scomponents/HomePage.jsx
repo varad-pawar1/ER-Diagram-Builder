@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS/style.css"
+import { Link } from "react-router-dom"; // Import Link
+
 const HomePage = () => {
   return (
     <div className="container my-5">
@@ -17,9 +19,11 @@ const HomePage = () => {
           <button className="btn btn-outline-primary me-2" style={{ width: "120px" }}>
             Learn more
           </button>
+          <Link to="/editercomp">
           <button className="btn btn-primary" style={{ width: "120px" }}>
             Get started
           </button>
+        </Link>
         </div>
         <div className="my-5 d-flex justify-content-center">
           <div className="col-12 col-md-8 col-lg-6">
