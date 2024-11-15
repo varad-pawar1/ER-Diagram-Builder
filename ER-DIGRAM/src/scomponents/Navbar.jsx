@@ -6,7 +6,7 @@ import "./CSS/style.css"
 const Navbar = ({ isLoggedIn, handleLogout }) => (
   <div className="navbar-container">
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">DrawER</a>
+      <a className="navbar-brand" href="/"> <img src="./src/assets/Draw ER.png" alt="DrawER Logo" style={{ height: "40px" }} /></a>
       <div className="collapse navbar-collapse justify-content-center">
         <ul className="navbar-nav">
           <li className="nav-item">

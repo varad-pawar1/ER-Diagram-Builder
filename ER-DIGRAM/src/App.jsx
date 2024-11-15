@@ -1,12 +1,11 @@
-
 import React, { useEffect, useState } from "react";
 import { Route, Navigate, Routes } from "react-router-dom";
 import Navbar from "./scomponents/Navbar";
 import HomePage from "./scomponents/HomePage";
 import LoginPage from "./scomponents/LoginPage";
 import SignupPage from "./scomponents/SignupPage";
+import Editercomp from "./vcomponents/Editercomp";
 
-import Editercomp from "./vcomponents/Editercomp"
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -36,13 +35,21 @@ function App() {
     <>
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       <Routes>
-        <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <LoginPage onLogin={handleLogin} />} />
-        <Route path="/signup" element={isLoggedIn ? <Navigate to="/" /> : <SignupPage onSignup={handleSignup} />} />
+        {/* Login and Signup pages redirect to Home if already logged in */}
+        <Route
+          path="/login"
+          element={isLoggedIn ? <Navigate to="/" /> : <LoginPage onLogin={handleLogin} />}
+        />
+        <Route
+          path="/signup"
+          element={isLoggedIn ? <Navigate to="/" /> : <SignupPage onSignup={handleSignup} />}
+        />
+        
+        {/* Home page requires user to be logged in */}
         <Route path="/" element={isLoggedIn ? <HomePage /> : <Navigate to="/login" />} />
-        
-        
-        <Route path="/editercomp" element={<Editercomp />} />
 
+        {/* EditerComp page requires user to be logged in */}
+        <Route path="/editercomp" element={isLoggedIn ? <Editercomp /> : <Navigate to="/login" />} />
       </Routes>
     </>
   );

@@ -1,7 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS/style.css"
+import { useNavigate } from 'react-router-dom';
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <div className="container my-5">
       {/* Main Section */}
@@ -17,7 +19,7 @@ const HomePage = () => {
           <button className="btn btn-outline-primary me-2" style={{ width: "120px" }}>
             Learn more
           </button>
-          <button className="btn btn-primary" style={{ width: "120px" }}>
+          <button className="btn btn-primary" style={{ width: "120px" }}  onClick={() => navigate('/editercomp')} >
             Get started
           </button>
         </div>
@@ -193,7 +195,7 @@ const HomePage = () => {
           </span>{" "}
           diagram for your app database in less than 15 minutes.
         </p>
-        <button className="btn btn-primary" style={{ width: "300px" }}>Start diagramming</button>
+        <button className="btn btn-primary" style={{ width: "300px" }} onClick={() => navigate('/editercomp')} >Start diagramming</button>
       </div>
 
  {/* Footer Section */}
