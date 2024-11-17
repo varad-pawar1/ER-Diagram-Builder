@@ -28,7 +28,7 @@ const HomePage = () => {
         <div className="my-5 d-flex justify-content-center">
           <div className="col-12 col-md-8 col-lg-10">
             <img
-              src="/src/assets/IMG/W1hatsApp.jpg"
+              src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731869492/W1hatsApp_cnfm23.jpg"
               alt="Database Diagram Preview"
               className="img-fluid shadow rounded"
             />
