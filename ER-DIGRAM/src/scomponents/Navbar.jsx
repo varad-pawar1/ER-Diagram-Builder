@@ -1,44 +1,115 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from 'react-scroll';  // Import the Link component from react-scroll
-import "./CSS/style.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS bundle
+import { Link } from "react-scroll"; // Import the Link component from react-scroll
+import "./CSS/style.css";
 
-const Navbar = ({ isLoggedIn, handleLogout }) => (
-  <div className="navbar-container">
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">ER SQL</a>
-      <div className="collapse navbar-collapse justify-content-between">
-        <ul className="navbar-nav mx-auto">
-          <li className="nav-item">
-            <Link style={{ cursor: "pointer" }} className="nav-link" to="features" smooth={true} duration={250}>Features</Link> {/* Use Link for smooth scroll */}
-          </li>
-          <li className="nav-item">
-            <Link style={{ cursor: "pointer" }} className="nav-link" to="pricing" smooth={true} duration={250}>Pricing</Link>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/templates">Templates</a>
-          </li>
-        </ul>
-        <ul className="navbar-nav">
-          {isLoggedIn ? (
-            <li className="nav-item nav-link btn btn-link d-flex align-items-center"
-              onClick={handleLogout}>
-              Logout
+const Navbar = ({ isLoggedIn, handleLogout }) => {
+  // Functionality to close the navbar menu after a link is clicked
+  const closeNavbar = () => {
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove("show");
+    }
+  };
+
+  return (
+    <div className="navbar-container">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="/">ER SQL</a>
+
+        {/* Toggler Button for Mobile View */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          {/* Center-aligned Links */}
+          <ul className="navbar-nav mx-auto text-center text-lg-start"> {/* Add text-center */}
+            <li className="nav-item">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="nav-link"
+                to="features"
+                smooth={true}
+                duration={250}
+                onClick={closeNavbar} // Close menu after click
+              >
+                Features
+              </Link>
             </li>
-          ) : (
-            <>
+            <li className="nav-item">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="nav-link"
+                to="pricing"
+                smooth={true}
+                duration={250}
+                onClick={closeNavbar} // Close menu after click
+              >
+                Pricing
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="/templates"
+                onClick={closeNavbar} // Close menu after click
+              >
+                Templates
+              </a>
+            </li>
+          </ul>
+
+          {/* Right-aligned Links */}
+          <ul className="navbar-nav">
+            {isLoggedIn ? (
               <li className="nav-item">
-                <a className="nav-link" href="/login">Login</a>
+                <button
+                  className="nav-link btn btn-link"
+                  onClick={() => {
+                    handleLogout();
+                    closeNavbar(); // Close menu after logout
+                  }}
+                >
+                  Logout
+                </button>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/signup">Signup</a>
-              </li>
-            </>
-          )}
-        </ul>
-      </div>
-    </nav>
-  </div>
-);
+            ) : (
+              <>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="/login"
+                    onClick={closeNavbar} // Close menu after click
+                  >
+                    Login
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="/signup"
+                    onClick={closeNavbar} // Close menu after click
+                  >
+                    Signup
+                  </a>
+                </li>
+              </>
+            )}
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 export default Navbar;
