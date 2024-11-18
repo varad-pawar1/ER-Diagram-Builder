@@ -93,10 +93,10 @@
 ---
 
 ## **Screenshots**  
-### **Signup **
+### **Sign up**
 ![Signup](https://github.com/user-attachments/assets/f1c56654-0bb2-4009-895c-4f7991bee648)
 
-### **Login **
+### **Login**
 ![Login](https://github.com/user-attachments/assets/8153063b-5f49-4853-9013-3e3306f3a575)
 
 ### **Home Page**  
