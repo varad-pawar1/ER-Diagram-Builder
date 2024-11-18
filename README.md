@@ -104,7 +104,7 @@
 ![Home Page](![screencapture-er-sql-netlify-app-2024-11-18-12_16_02](https://github.com/user-attachments/assets/0d0dcce2-c2bd-452b-88fe-5dc8e7c8bd5f))  
 
 ### **Diagram Builder Interface**  
-![Diagram Builder](https://via.placeholder.com/800x400.png?text=Diagram+Builder)  
+![Diagram Builder](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a858a389-63ec-47ac-8552-1a3e82f6209f))  
 
 ### **Real-Time Collaboration**  
 ![Collaboration](https://via.placeholder.com/800x400.png?text=Real-Time+Collaboration)  
