@@ -144,10 +144,6 @@ V ER-Diagram-Builder
     └── # Vite build configuration  
 ```
 
-Just paste this into your `README.md` file, and GitHub will render it with proper indentation and styling.
-
----
-
 
 ## **Screenshots**  
 ### **Sign up**
