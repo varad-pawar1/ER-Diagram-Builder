@@ -94,7 +94,7 @@
 ```markdown
 # Project Folder Structure
 
-This is the folder structure for the **V ER-Diagram-Builder** project.
+This is the folder structure for the **ER-Diagram-Builder** project.
 
 ```
 V ER-Diagram-Builder  
