@@ -91,6 +91,63 @@
 5. Open the app in your browser at `http://localhost:5173`.  
 
 ---
+```markdown
+# Project Folder Structure
+
+This is the folder structure for the **V ER-Diagram-Builder** project.
+
+```
+V ER-Diagram-Builder  
+│  
+├── dist/  
+│   └── # Distribution folder (build output)  
+│  
+├── node_modules/  
+│   └── # Installed dependencies  
+│  
+├── public/  
+│   └── # Public assets (HTML, images, etc.)  
+│  
+└── src/  
+    ├── assets/  
+    │   └── # Static assets (images, icons, etc.)  
+    ├── hooks/  
+    │   └── # Custom React hooks  
+    ├── pComponent/  
+    │   └── # Presentational components  
+    ├── scomponents/  
+    │   └── # Shared components  
+    ├── vcomponents/  
+    │   └── # View components  
+    ├── App.css  
+    │   └── # Global styles for the app  
+    ├── App.jsx  
+    │   └── # Main App component  
+    ├── index.css  
+    │   └── # Global CSS  
+    └── main.jsx  
+        └── # Entry point for React application  
+│  
+├── .gitignore  
+│   └── # Git ignore file  
+├── eslint.config.js  
+│   └── # ESLint configuration file  
+├── index.html  
+│   └── # Main HTML file  
+├── package-lock.json  
+│   └── # Locked dependencies  
+├── package.json  
+│   └── # Project metadata and dependencies  
+├── README.md  
+│   └── # Project README file  
+└── vite.config.js  
+    └── # Vite build configuration  
+```
+
+Just paste this into your `README.md` file, and GitHub will render it with proper indentation and styling.
+
+---
+
 
 ## **Screenshots**  
 ### **Sign up**
