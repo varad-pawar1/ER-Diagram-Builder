@@ -16,8 +16,14 @@ const Navbar = ({ isLoggedIn, handleLogout }) => {
   return (
     <div className="navbar-container">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/">ER SQL</a>
-
+      <a className="navbar-brand d-flex align-items-center" href="/">
+            <img
+              src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731911482/DRAW_ER_1_kidsos.png"
+              alt="Logo"
+              className="img-fluid" // Bootstrap class for responsive images
+              
+            />
+          </a>
         {/* Toggler Button for Mobile View */}
         <button
           className="navbar-toggler"

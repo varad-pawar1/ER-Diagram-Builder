@@ -228,6 +228,9 @@ input {
   position: fixed;
   top: 0;
   z-index: 10;
+  padding: 0px;
+  margin: 0px;
+
 }
 .navbar{
   width: 99%;
@@ -236,7 +239,7 @@ input {
 
 
 /* Center-align menu items in mobile view */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar-nav {
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -250,3 +253,15 @@ input {
 
 
 
+
+.navbar-brand img {
+  max-height: 40px; /* Adjust height for consistency */
+  width: auto; /* Maintain aspect ratio */
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 40px; /* Slightly smaller on smaller screens */
+  }
+}
