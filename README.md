@@ -101,7 +101,8 @@
 ![Diagram Builder](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a858a389-63ec-47ac-8552-1a3e82f6209f))  
 
 ### **Real-Time Collaboration**  
-![Collaboration](https://via.placeholder.com/800x400.png?text=Real-Time+Collaboration)  
+![Collaboration](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a1c6ed4b-430f-4020-ad6f-b480ce2f1167)
+)  
 
 ---
 
