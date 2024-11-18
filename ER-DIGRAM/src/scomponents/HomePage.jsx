@@ -20,12 +20,12 @@ const HomePage = () => {
             Learn more
           </button>
           <Link to="/editercomp">
-          <button className="btn btn-primary" style={{ width: "120px" }}>
-            Get started
-          </button>
-        </Link>
+            <button className="btn btn-primary" style={{ width: "120px" }}>
+              Get started
+            </button>
+          </Link>
         </div>
-        <div classNazme="my-5 d-flex justify-content-center">
+        <div className="d-flex justify-content-center align-items-center">
           <div className="col-12 col-md-8 col-lg-10">
             <img
               src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731869492/W1hatsApp_cnfm23.jpg"
@@ -34,6 +34,7 @@ const HomePage = () => {
             />
           </div>
         </div>
+
       </div>
 
       {/* Loved by Developers Section */}
@@ -59,7 +60,7 @@ const HomePage = () => {
       </div>
 
       {/* Features Section */}
-      <div  className="row text-center my-5">
+      <div className="row text-center my-5">
         {/* Feature 1 */}
         <div className="col-12 col-md-6 mb-4">
           <h3 className="h5">See the big picture</h3>
@@ -198,12 +199,12 @@ const HomePage = () => {
           diagram for your app database in less than 15 minutes.
         </p>
         <Link to="/editercomp">
-        <button className="btn btn-primary" style={{ width: "300px" }}>Start diagramming</button>
+          <button className="btn btn-primary" style={{ width: "300px" }}>Start diagramming</button>
         </Link>
       </div>
 
- {/* Footer Section */}
- <footer className="bg-dark text-light py-5">
+      {/* Footer Section */}
+      <footer className="bg-dark text-light py-5">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-3 mb-4">
