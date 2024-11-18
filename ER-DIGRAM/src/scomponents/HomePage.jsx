@@ -25,7 +25,7 @@ const HomePage = () => {
           </button>
         </Link>
         </div>
-        <div className="my-5 d-flex justify-content-center">
+        <div classNazme="my-5 d-flex justify-content-center">
           <div className="col-12 col-md-8 col-lg-10">
             <img
               src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731869492/W1hatsApp_cnfm23.jpg"
