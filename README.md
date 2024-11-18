@@ -95,7 +95,7 @@
 ## **Screenshots**  
 
 ### **Home Page**  
-!Home Page](https://github.com/user-attachments/assets/2d9725f0-2602-491a-ac71-6d5336405bba)  
+![Home Page](https://github.com/user-attachments/assets/2d9725f0-2602-491a-ac71-6d5336405bba)  
 
 ### **Diagram Builder Interface**  
 ![Diagram Builder](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a858a389-63ec-47ac-8552-1a3e82f6209f))  
