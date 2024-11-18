@@ -91,7 +91,6 @@
 5. Open the app in your browser at `http://localhost:5173`.  
 
 ---
-Sure! Here’s the folder structure in a vertical, indented format specifically designed for adding to a GitHub `README.md` file. It uses Markdown syntax for a clean and readable format:
 
 ```markdown
 # Project Folder Structure
@@ -145,8 +144,7 @@ V ER-Diagram-Builder
 └── vite.config.js  
     └── # Vite build configuration  
 ```
-
-Just paste this into your `README.md` file, and GitHub will render it with proper indentation and styling.
+---
 
 ## **Screenshots**  
 ### **Sign up**
