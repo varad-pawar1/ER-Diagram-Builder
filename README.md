@@ -98,11 +98,11 @@
 ![Home Page](https://github.com/user-attachments/assets/2d9725f0-2602-491a-ac71-6d5336405bba)  
 
 ### **Diagram Builder Interface**  
-![Diagram Builder](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a858a389-63ec-47ac-8552-1a3e82f6209f))  
+![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/85aaffaf-94ee-4723-9fa7-96ba13ee5c32)
+  
 
 ### **Real-Time Collaboration**  
 ![Collaboration](![screencapture-er-sql-netlify-app-editercomp-2024-11-18-12_19_07](https://github.com/user-attachments/assets/a1c6ed4b-430f-4020-ad6f-b480ce2f1167)
-)  
 
 ---
 
