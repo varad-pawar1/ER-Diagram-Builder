@@ -27,6 +27,13 @@
 
 ---
 
+## **Deployment**  
+
+- **Live Project**: [ER SQL Live](https://er-sql.netlify.app/)  
+- **GitHub Repository**: [GitHub Repo](https://github.com/varad-pawar1/ER-Diagram-Builder)
+  
+---
+
 ## **Tech Stack**  
 
 - **Frontend**: React.js, HTML, CSS, JavaScript  
@@ -159,12 +166,18 @@ V ER-Diagram-Builder
   
 ---
 
+### **Future Enhancements**
+1. **Versioning and History Tracking**:  
+   - Implement version control for ER diagrams, allowing users to track changes, revert to previous versions, and manage diagram history.
+  
+2. **Cloud Database Integration**:  
+   - Integrate the application with popular cloud databases (e.g., AWS RDS, Google Cloud Firestore) to allow users to generate ER diagrams directly from live databases.
+  
+3. **Advanced Query Generation**:  
+   - Add the ability to generate SQL queries or scripts directly from ER diagrams to automate database creation and updates based on the schema.
 
-## **Deployment**  
-
-- **Live Project**: [ER SQL Live](https://er-sql.netlify.app/)  
-- **GitHub Repository**: [GitHub Repo](https://github.com/varad-pawar1/ER-Diagram-Builder)  
-
+4. **Offline Mode**:  
+   - Enable offline support for users to continue designing ER diagrams without an active internet connection, syncing changes when the connection is restored.
 ---
 
 ## **Feedback**  
