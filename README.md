@@ -1,4 +1,4 @@
-# **ER SQL**  
+![screencapture-er-sql-netlify-app-2024-11-18-12_16_02](https://github.com/user-attachments/assets/2d9725f0-2602-491a-ac71-6d5336405bba)# **ER SQL**  
 ### **Web-Based ER Diagram Builder**  
 
 ![Project Banner](https://via.placeholder.com/1200x300.png?text=ER+SQL+-+Web-Based+ER+Diagram+Builder)  
@@ -101,7 +101,7 @@
 ## **Screenshots**  
 
 ### **Home Page**  
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)  
+![Home Page](![screencapture-er-sql-netlify-app-2024-11-18-12_16_02](https://github.com/user-attachments/assets/0d0dcce2-c2bd-452b-88fe-5dc8e7c8bd5f))  
 
 ### **Diagram Builder Interface**  
 ![Diagram Builder](https://via.placeholder.com/800x400.png?text=Diagram+Builder)  
