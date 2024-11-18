@@ -3,8 +3,62 @@
 
 **ER SQL** is a cutting-edge web application built with modern technologies to create, manage, and export Entity-Relationship (ER) diagrams. Designed for database designers and developers, **ER SQL** offers seamless real-time collaboration and a powerful set of tools for database schema design.  
 
----  
+---
 
+```markdown
+# Project Folder Structure
+
+This is the folder structure for the **V ER-Diagram-Builder** project.
+
+```
+V ER-Diagram-Builder  
+│  
+├── dist/  
+│   └── # Distribution folder (build output)  
+│  
+├── node_modules/  
+│   └── # Installed dependencies  
+│  
+├── public/  
+│   └── # Public assets (HTML, images, etc.)  
+│  
+└── src/  
+    ├── assets/  
+    │   └── # Static assets (images, icons, etc.)  
+    ├── hooks/  
+    │   └── # Custom React hooks  
+    ├── pComponent/  
+    │   └── # Presentational components  
+    ├── scomponents/  
+    │   └── # Shared components  
+    ├── vcomponents/  
+    │   └── # View components  
+    ├── App.css  
+    │   └── # Global styles for the app  
+    ├── App.jsx  
+    │   └── # Main App component  
+    ├── index.css  
+    │   └── # Global CSS  
+    └── main.jsx  
+        └── # Entry point for React application  
+│  
+├── .gitignore  
+│   └── # Git ignore file  
+├── eslint.config.js  
+│   └── # ESLint configuration file  
+├── index.html  
+│   └── # Main HTML file  
+├── package-lock.json  
+│   └── # Locked dependencies  
+├── package.json  
+│   └── # Project metadata and dependencies  
+├── README.md  
+│   └── # Project README file  
+└── vite.config.js  
+    └── # Vite build configuration  
+```
+
+---
 ## **Features**  
 
 ### **Core Features**  
