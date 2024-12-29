@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./CSS/style.css";
-
+import { Link } from "react-router-dom";
 const LoginPage = ({ onLogin }) => {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -71,11 +72,16 @@ const LoginPage = ({ onLogin }) => {
             <button type="submit" className="login-btn button1">Login</button>
           </form>
           <div className="signup-link">
-            <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+            <Link
+              className="nav-link"
+              to="/signup"
+            >Don't have an account?
+              Signup
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

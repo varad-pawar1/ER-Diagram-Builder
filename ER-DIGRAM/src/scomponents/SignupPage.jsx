@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CSS/style.css";
+import { Link } from "react-router-dom";
 
 const SignupPage = ({ onSignup }) => {
   const [email, setEmail] = useState("");
@@ -48,7 +49,7 @@ const SignupPage = ({ onSignup }) => {
         setError("");
         onSignup(data);  // Trigger onSignup callback with user data
         localStorage.setItem("user", JSON.stringify(data));
-        
+
         // Redirect to the home page after signup
         navigate("/");
       } else {
@@ -64,7 +65,7 @@ const SignupPage = ({ onSignup }) => {
     <div className="signup-container">
       <form onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
-        
+
         {error && <p className="error-message">{error}</p>}  {/* Display error message if any */}
 
         <input
@@ -74,7 +75,7 @@ const SignupPage = ({ onSignup }) => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        
+
         <input
           type="password"
           placeholder="Enter password"
@@ -82,7 +83,7 @@ const SignupPage = ({ onSignup }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        
+
         <input
           type="password"
           placeholder="Confirm password"
@@ -90,12 +91,15 @@ const SignupPage = ({ onSignup }) => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
         />
-        
+
         <button type="submit" className="button1">Sign Up</button>
-        
-        <p>
-          Already have an account? <a href="/login">Login</a>
-        </p>
+        <Link
+          className="nav-link"
+          to="/login"
+        >Already have an account?
+          Login
+        </Link>
+
       </form>
     </div>
   );

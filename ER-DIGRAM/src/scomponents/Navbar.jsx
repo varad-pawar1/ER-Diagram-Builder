@@ -62,15 +62,6 @@ const Navbar = ({ isLoggedIn, handleLogout }) => {
                 Pricing
               </ScrollLink>
             </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/templates"
-                onClick={closeNavbar}
-              >
-                Templates
-              </Link>
-            </li>
           </ul>
 
           {/* Right-aligned Links */}
