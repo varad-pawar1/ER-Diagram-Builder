@@ -3,8 +3,7 @@
 **ER SQL** is a cutting-edge web application built with modern technologies to create, manage, and export Entity-Relationship (ER) diagrams. Designed for database designers and developers, **ER SQL** offers seamless real-time collaboration and a powerful set of tools for database schema design.
 
 ---
-
-## **Features**
+## **Features**  
 
 ### **Core Features**
 
@@ -20,20 +19,19 @@
 5. **Responsive Design**:
    - Built with **Bootstrap** and **Chakra UI** for a modern, mobile-friendly interface.
 
-### **Advanced Features**
-
-- **Interactive Flow**: Built using **React Flow Renderer** for dynamic diagram management.
-- **State Management**: Centralized state management with **Redux Toolkit**.
-- **Smooth Animations**: Enhanced user experience with **Framer Motion**.
-- **Template Support**: Pre-built templates for common database structures.
+### **Advanced Features**  
+- **Interactive Flow**: Built using **React Flow Renderer** for dynamic diagram management.  
+- **State Management**: Centralized state management with **Redux Toolkit**.  
+- **Smooth Animations**: Enhanced user experience with **Framer Motion**.  
+- **Template Support**: Pre-built templates for common database structures.  
 
 ---
 
-## **Deployment**
+## **Deployment**  
 
-- **Live Project**: [ER SQL Live](https://er-sql.netlify.app/)
+- **Live Project**: [ER SQL Live](https://er-sql.netlify.app/)  
 - **GitHub Repository**: [GitHub Repo](https://github.com/varad-pawar1/ER-Diagram-Builder)
-
+  
 ---
 
 ## **Tech Stack**
@@ -101,8 +99,7 @@
    npm run dev
    ```
 
-5. Open the app in your browser at `http://localhost:5173`.
-
+5. Open the app in your browser at `http://localhost:5173`.  
 ---
 
 ### Project Folder Structure
@@ -110,51 +107,51 @@
 This is the folder structure for the **V ER-Diagram-Builder** project.
 
 ```
-V ER-Diagram-Builder
-│
-├── dist/
-│   └── # Distribution folder (build output)
-│
-├── node_modules/
-│   └── # Installed dependencies
-│
-├── public/
-│   └── # Public assets (HTML, images, etc.)
-│
-└── src/
-    ├── assets/
-    │   └── # Static assets (images, icons, etc.)
-    ├── hooks/
-    │   └── # Custom React hooks
-    ├── pComponent/
-    │   └── # Presentational components
-    ├── scomponents/
-    │   └── # Shared components
-    ├── vcomponents/
-    │   └── # View components
-    ├── App.css
-    │   └── # Global styles for the app
-    ├── App.jsx
-    │   └── # Main App component
-    ├── index.css
-    │   └── # Global CSS
-    └── main.jsx
-        └── # Entry point for React application
-│
-├── .gitignore
-│   └── # Git ignore file
-├── eslint.config.js
-│   └── # ESLint configuration file
-├── index.html
-│   └── # Main HTML file
-├── package-lock.json
-│   └── # Locked dependencies
-├── package.json
-│   └── # Project metadata and dependencies
-├── README.md
-│   └── # Project README file
-└── vite.config.js
-    └── # Vite build configuration
+V ER-Diagram-Builder  
+│  
+├── dist/  
+│   └── # Distribution folder (build output)  
+│  
+├── node_modules/  
+│   └── # Installed dependencies  
+│  
+├── public/  
+│   └── # Public assets (HTML, images, etc.)  
+│  
+└── src/  
+    ├── assets/  
+    │   └── # Static assets (images, icons, etc.)  
+    ├── hooks/  
+    │   └── # Custom React hooks  
+    ├── pComponent/  
+    │   └── # Presentational components  
+    ├── scomponents/  
+    │   └── # Shared components  
+    ├── vcomponents/  
+    │   └── # View components  
+    ├── App.css  
+    │   └── # Global styles for the app  
+    ├── App.jsx  
+    │   └── # Main App component  
+    ├── index.css  
+    │   └── # Global CSS  
+    └── main.jsx  
+        └── # Entry point for React application  
+│  
+├── .gitignore  
+│   └── # Git ignore file  
+├── eslint.config.js  
+│   └── # ESLint configuration file  
+├── index.html  
+│   └── # Main HTML file  
+├── package-lock.json  
+│   └── # Locked dependencies  
+├── package.json  
+│   └── # Project metadata and dependencies  
+├── README.md  
+│   └── # Project README file  
+└── vite.config.js  
+    └── # Vite build configuration  
 ```
 
 ---
@@ -180,22 +177,17 @@ V ER-Diagram-Builder
 ---
 
 ### **Future Enhancements**
-
-1. **Versioning and History Tracking**:
-
+1. **Versioning and History Tracking**:  
    - Implement version control for ER diagrams, allowing users to track changes, revert to previous versions, and manage diagram history.
-
-2. **Cloud Database Integration**:
-
+  
+2. **Cloud Database Integration**:  
    - Integrate the application with popular cloud databases (e.g., AWS RDS, Google Cloud Firestore) to allow users to generate ER diagrams directly from live databases.
-
-3. **Advanced Query Generation**:
-
+  
+3. **Advanced Query Generation**:  
    - Add the ability to generate SQL queries or scripts directly from ER diagrams to automate database creation and updates based on the schema.
 
-4. **Offline Mode**:
+4. **Offline Mode**:  
    - Enable offline support for users to continue designing ER diagrams without an active internet connection, syncing changes when the connection is restored.
-
 ---
 
 ## **Feedback**
