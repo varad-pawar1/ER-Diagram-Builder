@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./CSS/style.css"
+import "./CSS/style.css";
 import { Link } from "react-router-dom"; // Import Link
 
 const HomePage = () => {
@@ -9,14 +9,23 @@ const HomePage = () => {
       {/* Main Section */}
       <div className="text-center mb-5">
         <h1 className="display-4">
-          Beautiful <span className="text-primary" style={{ fontWeight: "bold", color: "rgb(34, 139, 34)" }}>database diagrams</span>
+          Beautiful{" "}
+          <span
+            className="text-primary"
+            style={{ fontWeight: "bold", color: "rgb(34, 139, 34)" }}
+          >
+            database diagrams
+          </span>
         </h1>
         <p className="lead">
           Design, visualize and collaborate on entity relationship diagrams for
           your databases
         </p>
         <div className="my-4 d-flex justify-content-center align-items-center">
-          <button className="btn btn-outline-primary me-2" style={{ width: "120px" }}>
+          <button
+            className="btn btn-outline-primary me-2"
+            style={{ width: "120px" }}
+          >
             Learn more
           </button>
           <Link to="/editercomp">
@@ -28,13 +37,12 @@ const HomePage = () => {
         <div className="d-flex justify-content-center align-items-center">
           <div className="col-12 col-md-8 col-lg-10">
             <img
-              src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731869492/W1hatsApp_cnfm23.jpg"
+              src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1746204296/W1hatsApp_oqfso0.png"
               alt="Database Diagram Preview"
               className="img-fluid shadow rounded"
             />
           </div>
         </div>
-
       </div>
 
       {/* Loved by Developers Section */}
@@ -49,11 +57,20 @@ const HomePage = () => {
           Database design tool for creating schema diagrams, built for the
           modern development workflow.
         </p>
-        <div id="features" className="my-4 d-flex justify-content-center align-items-center">
-          <button className="btn btn-outline-danger me-2 mb-2 mb-md-0" style={{ width: "300px" }} >
+        <div
+          id="features"
+          className="my-4 d-flex justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-outline-danger me-2 mb-2 mb-md-0"
+            style={{ width: "300px" }}
+          >
             Featured on Product Hunt
           </button>
-          <button className="btn btn-outline-secondary" style={{ width: "300px" }}>
+          <button
+            className="btn btn-outline-secondary"
+            style={{ width: "300px" }}
+          >
             #2 Product of the Day
           </button>
         </div>
@@ -96,7 +113,9 @@ const HomePage = () => {
 
       {/* "Visually Stunning" Section */}
       <div className="text-center my-5">
-        <button className="btn btn-primary mb-4" style={{ width: "300px" }}>See examples</button>
+        <button className="btn btn-primary mb-4" style={{ width: "300px" }}>
+          See examples
+        </button>
 
         {/* Supported DBMS logos */}
         <h4 className="display-6 lead text-muted">
@@ -199,7 +218,9 @@ const HomePage = () => {
           diagram for your app database in less than 15 minutes.
         </p>
         <Link to="/editercomp">
-          <button className="btn btn-primary" style={{ width: "300px" }}>Start diagramming</button>
+          <button className="btn btn-primary" style={{ width: "300px" }}>
+            Start diagramming
+          </button>
         </Link>
       </div>
 

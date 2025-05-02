@@ -18,7 +18,7 @@ const Navbar = ({ isLoggedIn, handleLogout }) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand d-flex align-items-center" href="/">
           <img
-            src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1731911482/DRAW_ER_1_kidsos.png"
+            src="https://res.cloudinary.com/da4bxmlgp/image/upload/v1746204295/DRAW_ER_1_ckmten.png"
             alt="Logo"
             className="img-fluid"
           />
